@@ -2,7 +2,7 @@ const SpotifyAPI = require('../SpotifyAPI');
 
 module.exports = {
     command: 'search',
-    description: 'Searches for a song (Proof Of Concept)',
+    description: 'Searches for a song and plays it',
     usage: '{c} {song}',
     executor(args) {
         const isPremium = getModule(['isSpotifyPremium'], false).isSpotifyPremium();
